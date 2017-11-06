@@ -2,6 +2,7 @@
 - hosts: webservers
   gather_facts: no
   become: yes
+  become_method: sudo
   become_user: tomcat
   roles:
     - webservers
