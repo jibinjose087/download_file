@@ -2,6 +2,6 @@
 - hosts: webservers
   gather_facts: no
   become: yes
-  become_user: dry
+  become_user: tomcat
   roles:
     - webservers
