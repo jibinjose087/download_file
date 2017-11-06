@@ -11,5 +11,10 @@
     
   - name: stop the tomcat service
     service: name=tomcat state=started
-  - name: checking the user
-    command: whoami
+ 
+  - name: printing the running user
+    shell: whoami
+    register: usr
+
+  - debug: msg={{ usr }} 
+ 
