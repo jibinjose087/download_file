@@ -11,3 +11,5 @@
     
   - name: stop the tomcat service
     service: name=tomcat state=started
+  - name: checking the user
+    command: whoami
