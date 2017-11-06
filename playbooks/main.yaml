@@ -3,7 +3,5 @@
   gather_facts: no
   become: true
   become_user: dry
-  #sudo: true
-  #sudo_user: dry
   roles:
     - webservers
